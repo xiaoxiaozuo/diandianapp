@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/jiemian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5">
+
+        <Button
+            android:id="@+id/fanghui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="返回"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/movieName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/fanghui"
+            android:textSize="24sp"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+
+
+    <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+        android:id="@+id/palyerview"
+        android:layout_width="match_parent"
+        android:layout_height="400dp" />
+
+
+    <Button
+        android:id="@+id/quanping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="全屏" />
+
+
+</LinearLayout>
